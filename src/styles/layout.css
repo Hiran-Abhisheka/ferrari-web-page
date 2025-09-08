@@ -1,0 +1,24 @@
+/* Additional layout or overrides */
+.section { padding:5rem 2rem; }
+
+.ferrari-logo {
+  margin-right: 8px;
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .ferrari-logo {
+  transform: scale(1.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.brand-name {
+  font-family: var(--font-brand);
+  letter-spacing: 0.05em;
+}
