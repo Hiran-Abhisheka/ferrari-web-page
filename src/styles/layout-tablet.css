@@ -1,0 +1,7 @@
+/* Tablet Layout */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .panels-container { 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

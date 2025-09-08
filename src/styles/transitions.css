@@ -1,0 +1,46 @@
+/* Fade to black overlay */
+.fade-to-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  z-index: 10;
+  will-change: opacity;
+}
+
+/* Simplified cinematic effect */
+.cinematic-lines-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  background-color: transparent;
+  will-change: opacity;
+}
+
+/* Main content reveal effect */
+.main-content {
+  position: relative;
+  opacity: 0;
+  height: 100%;
+}
+
+/* Container for sections */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Page transition animation */
+@keyframes revealFromBottom {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
